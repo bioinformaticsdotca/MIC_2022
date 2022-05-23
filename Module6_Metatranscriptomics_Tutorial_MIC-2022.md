@@ -693,8 +693,8 @@ wget https://github.com/ParkinsonLab/Metatranscriptome-Workshop/releases/downloa
 <li>Select the XML file, <code>ec00010.xml</code> or <code>ec00500.xml</code> and click <code>Open</code></li>
 <li>Check <code>Import pathway details from KEGG Database</code> box then select <code>OK</code></li>
 </ul>
-  <p dir="auto"><br></p>
-<p dir="auto"><strong>Loading a node attribute text file (.txt) - this will map attributes to nodes in your network which you can subsequently visualize</strong></p>
+  <p dir="auto"></p>
+<p dir="auto"><strong>Loading a node attribute text file (.txt)</strong> - This will map attributes (e.g. expression values) to nodes in your network which you can subsequently visualize</p>
 <ul dir="auto">
 <li>Select <code>File</code> -&gt; <code>Import</code> -&gt; <code>Table</code> -&gt; <code>File...</code></li>
 <li>Select the <code>Cytoscape_network.tsv</code> file and click <code>Open</code></li>
