@@ -686,6 +686,7 @@ wget https://github.com/ParkinsonLab/Metatranscriptome-Workshop/releases/downloa
 <li>Search for <code>KEGGScape</code></li>
 <li>Select <code>KEGGScape</code> in the middle column then click <code>Install</code> in the bottom right</li>
 </ul>
+  <p dir="auto"><br></p>
 <p dir="auto"><strong>Import an XML from KEGG into Cytoscape</strong></p>
 <ul dir="auto">
 <li>Select <code>File</code> -&gt; <code>Import</code> -&gt; <code>Network</code> -&gt; <code>File...</code></li>
@@ -725,12 +726,3 @@ wget https://github.com/ParkinsonLab/Metatranscriptome-Workshop/releases/downloa
 </ul>
 
   
-  
-</ul></article>
-  </div>
-
-    </div>
-
-  </readme-toc>
-
- 
