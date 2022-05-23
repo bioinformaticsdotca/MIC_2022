@@ -712,6 +712,7 @@ wget https://github.com/ParkinsonLab/Metatranscriptome-Workshop/releases/downloa
 <li>If you do not see the <code>Image/Chart 1</code> panel, select <code>Properties</code> -&gt; <code>Paint</code> -&gt; <code>Custom Paint 1</code> -&gt; <code>Image/Chart 1</code> from the to left corner of the control panel</li>
 <li>To improve the visualization you can modify colour properties under <code>Image/Chart 1</code> -&gt; <code>Charts</code> -&gt; <code>Options</code>, or modify other properties such as Label Font Size, Label Position, Fill Color, Node location, and edge properties</li>
 </ul>
+  <p dir="auto"></p>
 <p dir="auto"><strong>Notes:</strong></p>
 <ul dir="auto">
 <li>A cytoscape file with node attributes precalculated is provided for your convenience, <code>tar -xzf tutorial_files.tar.gz Example.cys</code>, feel free to open it and play with different visualizations and different layouts - compare the circular layouts with the spring embedded layouts for example. If you want to go back to the original layout then you will have to reload the file.</li>
