@@ -701,7 +701,7 @@ wget https://github.com/ParkinsonLab/Metatranscriptome-Workshop/releases/downloa
 <li>Change the <code>Key Column for network</code> from <code>shared name</code> to <code>KEGG_NODE_LABEL</code></li>
 <li>Click OK</li>
 </ul>
-  <p dir="auto"><br></p>
+  <p dir="auto"></p>
 <p dir="auto"><strong>Visualizing your node attributes</strong></p>
 <ul dir="auto">
 <li>In the left <code>Control Panel</code> select the <code>Style</code> tab</li>
@@ -717,7 +717,7 @@ wget https://github.com/ParkinsonLab/Metatranscriptome-Workshop/releases/downloa
 <li>A cytoscape file with node attributes precalculated is provided for your convenience, <code>tar -xzf tutorial_files.tar.gz Example.cys</code>, feel free to open it and play with different visualizations and different layouts - compare the circular layouts with the spring embedded layouts for example. If you want to go back to the original layout then you will have to reload the file.</li>
 <li>Cytoscape can be temperamental. If you don't see pie charts for the nodes, they appear as blank circles, you can show these manually. Under the 'properties' panel on the left, there is an entry labeled 'Custom Graphics 1'. Double click the empty box on the left (this is for default behavior) - this will pop up a new window with a choice of 'Images' 'Charts' and 'Gradients' - select 'Charts', choose the chart type you want (pie chart or donut for example) and select the different bacterial taxa by moving them from "Available Columns" to "Selected Columns". Finally click on 'Apply' in bottom right of window (may not be visible until you move the window).</li>
 </ul>
-  <p dir="auto"><br></p>
+  <p dir="auto"></p>
 <p dir="auto"><strong>Visualization Questions:</strong></p>
 <ul dir="auto">
 <li>Which genes are most highly expressed in these two systems?</li>
