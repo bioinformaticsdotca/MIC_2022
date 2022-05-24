@@ -451,7 +451,7 @@ In this step, MetaPro does the following:</p>
 <p dir="auto"><br></p>
 <blockquote>
 <p dir="auto"><em><strong>Question 7.1: How many contigs did SPAdes produce?<br>
-Hint: try using the command <code>tail mouse1_contigs.fasta</code></strong></em></p>
+Hint: try using the command <code>tail contigs.fasta</code></strong></em></p>
 </blockquote>
 <p dir="auto"><br></p>
 <blockquote>
