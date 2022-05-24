@@ -460,19 +460,17 @@ Hint: try using the command <code>tail contigs.fasta</code></strong></em></p>
 </blockquote>
 <p dir="auto"><br></p>
 <h3 dir="auto"><a id="user-content-step-8-annotate-reads-to-known-genesproteins--do-not-run" class="anchor" aria-hidden="true" href="#step-8-annotate-reads-to-known-genesproteins--do-not-run"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a><a id="user-content-step-8-annotate-reads-to-known-genesproteins--do-not-run" href="#step-8-annotate-reads-to-known-genesproteins--do-not-run"></a>Step 8. Annotate reads to known genes/proteins *** <strong>[DO NOT RUN]</strong></h3>
-<p dir="auto">Here we will attempt to infer the specific genes our putative mRNA reads originated from. In our pipeline we rely on a tiered set of sequence similarity searches of decreasing accuracy - BWA, BLAT, and DIAMOND. While BWA provides high stringency, sequence diversity that occurs at the nucleotide level results in few matches observed for these processes. Nonetheless it is quick. To avoid the problems of diversity that occur at the level of nucleotide, particularly in the absence of reference microbial genomes, we use a cascaded method involving two other tools: BLAT, and DIAMOND. BLAT provides a more sensitive alignment, along with quality scores to rank the matches.  DIAMOND is used to provide more sensitive peptide-based searches, which are less prone to sequence changes between strains.</p>
-<p dir="auto">Since BWA and BLAT utilize nucleotide searches, we rely on the <a href="http://huttenhower.sph.harvard.edu/humann2_data/chocophlan/" rel="nofollow">ChocoPhlan pangenome database</a> that we obtained from The Huttenhower lab, which contains over 10000 organisms in separate .ffn files.  We create a merged copy of these sequences, and index it for BWA to use.  We leave it in its separated state for BLAT to use.</p>
+<p dir="auto">Here we will attempt to infer the specific genes our putative mRNA reads originated from. In our pipeline we rely on a tiered set of sequence similarity searches of decreasing accuracy - BWA, BLAT, and DIAMOND. While BWA provides high stringency, sequence diversity that occurs at the nucleotide level results in few matches observed for these processes. Nonetheless it is quick. To account for sequence diversity that occurs at the nucleotide level, particularly in the absence of reference microbial genomes, we use a cascaded method involving two other tools: BLAT, and DIAMOND. BLAT provides a more sensitive alignment, along with quality scores to rank the matches.  DIAMOND is used to provide more sensitive peptide-based searches, which are unaffected by sequence changes between strains.</p>
+<p dir="auto">Since BWA and BLAT perform nucleotide searches, we rely on the <a href="http://huttenhower.sph.harvard.edu/humann2_data/chocophlan/" rel="nofollow">ChocoPhlan pangenome database</a> from The Huttenhower lab, which contains reference genomes for over 10000 microbial organisms in separate .ffn files.  We create a merged copy of these sequences, and index it for BWA to use.  We leave it in its separated state for BLAT to use.</p>
 <p dir="auto">For DIAMOND searches we use the Non-Redundant (NR) protein database from the NCBI.</p>
 <p dir="auto">This is a computationally intensive step.  We employ our subdivision strategy here, similar to our design for rRNA removal, as seen below</p>
 <ul dir="auto">
-<li>The mRNA read data (contigs, remaining singletons, and remaining paired reads if applicable) are split into chunksizes (GA_chunksize in the configuration)</li>
+<li>The mRNA read data (contigs, remaining singletons, and remaining paired reads if applicable) are split into smaller sequence files, or 'chunks', (GA_chunksize in the configuration)</li>
 <li>Each chunk is sent through BWA to be aligned against the ChocoPhlan database</li>
-<li>A map of genes to constituent reads is formed for each chunk.</li>
 <li>Reads not annotated by BWA are isolated, and are sent through to BLAT.</li>
-<li>Another map of genes to constituent BLAT-annotated reads are formed for each chunk.</li>
 <li>Reads not annotated by BLAT are isolated, and are sent through to DIAMOND.</li>
-<li>A 3rd batch of maps of annotations to constituent reads are formed for the DIAMOND reads for each chunk.</li>
-</ul>
+<li>At each step, a map of annotated genes (or proteins) to constituent reads is produced.</li>
+</ul> 
 <p dir="auto">In all, this leaves us with (split into chunks):</p>
 <ul dir="auto">
 <li>a batch of BWA-annotated gene-to-read maps</li>
@@ -480,11 +478,11 @@ Hint: try using the command <code>tail contigs.fasta</code></strong></em></p>
 <li>a batch of DIAMOND-annotated protein-to-read maps</li>
 <li>a batch of reads unannotated by BWA, BLAT, and DIAMOND.</li>
 </ul>
-<p dir="auto">These batches of files are then sent to a custom script that will perform all of the final merging:</p>
+<p dir="auto">These files are then merged using a custom script, and output into the GA_FINAL_MERGE folder (GA = "gene annotation"). Files include:</p>
 <ul dir="auto">
-<li>collect and merge every map to form one map.</li>
-<li>collect and merge the unannotated DIAMOND reads</li>
-<li>collect all of the genes that were found in the reads, and convert them into proteins.  Then merge them with the proteins found in DIAMOND.  This step is for downstream analysis.</li>
+<li>a gene map <code>gene_map.tsv</code></li>
+<li>unannotated reads <code>GA_leftover_contigs.fasta</code> <code>GA_leftover_singletons.fasta</code></li>
+<li>translated protein sequences of all genes annotated over the three annotation steps <code>all_proteins.faa</code></li>
 </ul>
 <p dir="auto">The format of the MetaPro command is:</p>
 <p dir="auto">    read1='&lt;path to your unassembled singletons.fastq&gt;'<br>
