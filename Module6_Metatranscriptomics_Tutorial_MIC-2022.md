@@ -567,7 +567,7 @@ contig=/media/data/workspace/metapro_tutorial/mouse1_run/assemble_contigs/final_
 python3 /pipeline/MetaPro.py -c $config -s $read1 --contig $contig -o $output --tutorial TA
 </code></pre></div></div>
 <p dir="auto">We have provided pre-computed results here:</p>
-<div dir="auto"><div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="mouse1_run/taxonomic_annotation/final_results"><pre class="notranslate"><code>mouse1_run/taxonomic_annotation/final_results
+<div dir="auto"><div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="ls mouse1_run/taxonomic_annotation/final_results"><pre class="notranslate"><code>ls mouse1_run/taxonomic_annotation/final_results
 </code></pre></div></div>
 <p dir="auto">We can use <a href="https://github.com/marbl/Krona/wiki">Krona</a> to generate a hierarchical multi-layered pie chart summary of the taxonomic composition of our dataset.  First, the export of MetaPro's taxonomic annotations needs to be slightly modified. Run the following commands to generate a Krona output:</p>
 <div dir="auto"><div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="python3 /pipeline/Scripts/alter_taxa_for_krona.py mouse1_run/taxonomic_annotation/final_results/taxonomic_classifications.tsv mouse1_classification.tsv
