@@ -603,19 +603,16 @@ python3 /pipeline/MetaPro.py -c $config -s $read1 --contig $contig -o $output --
 <div dir="auto"><div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="ls mouse1_run/enzyme_annotation/final_results"><pre class="notranslate"><code>ls mouse1_run/enzyme_annotation/final_results
 </code></pre></div></div>
 <p dir="auto"><strong>Notes:</strong><br>
-MetaPro's high-confidence and low-confidence are determined by the following:<br>
--   DIAMOND: Low-confidence hits are ones with an e-value of 1e-5 or smaller.  High-confidence hits are ones with an e-value of 1e-10 or smaller<br>
--   PRIAM: Low-confidence hits are ones with e-values lower than 1e-5.  High-confidence hits are ones where their probability value is 0.5 or higher<br>
--   DETECT: There is no separation.</p>
-<p dir="auto">MetaPro reconciles the 3 annotations in the following manner:<br>
--   The Enzymes predicted by DETECT are taken, followed by the annotations that agree between PRIAM and DIAMOND
--   In the event of multiple enzymes being annotated to the same protein:
--   Every enzyme annotation comes with a probability score.
--   MetaPro includes a enzyme co-occurence database (compiled from the ENZYME database) that contains pairs of enzymes known to exist together
--   Using this co-occurence database, MetaPro filters invalid predictions.
--   In cases where more-than-2 enzymes are annotated to a protein, the top 2 enzymes are taken, based on the probability score.
--   If a pair of enzymes do not exist in the database, the enzyme with the higher probability score is declared the proper annotation.
--   Otherwise, the annotation is declared as a pair of enzymes.</p>
+MetaPro's high-confidence and low-confidence are determined as follows:<br>
+-   DIAMOND: Low-confidence hits have an e-value of 1e-5 or smaller; high-confidence hits have an e-value of 1e-10 or smaller<br>
+-   PRIAM: Low-confidence hits have e-values lower than 1e-5; high-confidence hits have a probability value of 0.5 or higher<br>
+-   DETECT: No separation.</p>
+<p dir="auto">MetaPro reconciles the three sets of annotations in the following manner:<br>
+-   Enzymes predicted by DETECT are included, followed by annotations that agree between PRIAM and DIAMOND<br>
+In the event that multiple enzymes are annotated to the same protein:<br>
+-   Each enzyme annotation comes with a probability score.<br>
+-   MetaPro includes an enzyme co-occurence database (compiled from the ENZYME database) that contains pairs of enzymes known to exist together. Using this co-occurence database, the pipeline filters out invalid predictions. If a pair of enzymes does not exist in the database, the enzyme with the higher probability score is declared the proper annotation.<br>
+-   In cases where more than two enzymes are annotated to a protein, the top two enzymes are assigned based on the probability score.</p>
 <p dir="auto"><br></p>
 <blockquote>
 <p dir="auto"><em><strong>Question 10.1: How many high-confidence unique enzyme functions were identified in our dataset?</strong></em></p>
