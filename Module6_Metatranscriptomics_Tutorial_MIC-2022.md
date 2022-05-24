@@ -402,7 +402,7 @@ python3 /pipeline/MetaPro.py -c $config -s $read1 -o $output --tutorial rRNA
 <p dir="auto">We have provided you with the pre-computed results:</p>
 <div dir="auto"><div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="ls mouse1_run/rRNA_filter/final_results"><pre class="notranslate"><code>ls mouse1_run/rRNA_filter/final_results
 </code></pre></div></div>
-<p dir="auto">Here, we only remove a few thousand reads that map to rRNA, but in some datasets rRNA may represent up to 80% of the sequenced reads.</p>
+<p dir="auto">Here, we only remove about a thousand reads that map to rRNA, but in some datasets rRNA may represent up to 80% of the sequenced reads.</p>
 <p dir="auto"><br></p>
 <blockquote>
 <p dir="auto"><em><strong>Question 5.1: How many rRNA sequences were identified? How many reads are now remaining?</strong></em></p>
