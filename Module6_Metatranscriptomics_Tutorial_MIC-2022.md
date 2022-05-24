@@ -230,11 +230,8 @@ python3 /pipeline/MetaPro.py -c $config -s $read1 -o $output --tutorial quality
 </blockquote>
 <p dir="auto"><br><br>
 Use FastQC to check the quality of the reads filtered for low quality bases and short length:</p>
-<div dir="auto"><div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="cd mouse1_run/quality_filter/data/4_quality_filter/
-/pipeline_tools/FastQC/fastqc singletons_hq.fastq
-cd ../../../../"><pre class="notranslate"><code>cd mouse1_run/quality_filter/data/4_quality_filter/
-/pipeline_tools/FastQC/fastqc singletons_hq.fastq
-cd ../../../../
+<div dir="auto"><div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="/pipeline_tools/FastQC/fastqc mouse1_run/quality_filter/data/4_quality_filter/singletons_hq.fastq
+"><pre class="notranslate"><code>/pipeline_tools/FastQC/fastqc mouse1_run/quality_filter/data/4_quality_filter/singletons_hq.fastq
 </code></pre></div></div>
 <p dir="auto">Navigate to the ~/4_quality_filter/ directory in your browser to view the HTML report.</p>
 <p dir="auto">Compare with the previous report to see changes in the following sections:</p>
