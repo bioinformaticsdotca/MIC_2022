@@ -224,7 +224,7 @@ python3 /pipeline/MetaPro.py -c $config -s $read1 -o $output --tutorial quality
 <li>remove adapters</li>
 <li>remove duplicate reads within the dataset</li>
 </ul>
-<p dir="auto"><br><br></p>
+<p dir="auto"><br></p>
 <blockquote>
 <p dir="auto"><em><strong>Question 1.1: How many low quality sequences have been removed?</strong></em></p>
 </blockquote>
@@ -471,6 +471,7 @@ Hint: try using the command <code>tail contigs.fasta</code></strong></em></p>
 <li>Reads not annotated by BLAT are isolated, and are sent through to DIAMOND.</li>
 <li>At each step, a map of annotated genes (or proteins) to constituent reads is produced.</li>
 </ul> 
+ <p dir="auto"></p>
 <p dir="auto">In all, this leaves us with (split into chunks):</p>
 <ul dir="auto">
 <li>a batch of BWA-annotated gene-to-read maps</li>
@@ -478,12 +479,14 @@ Hint: try using the command <code>tail contigs.fasta</code></strong></em></p>
 <li>a batch of DIAMOND-annotated protein-to-read maps</li>
 <li>a batch of reads unannotated by BWA, BLAT, and DIAMOND.</li>
 </ul>
+<p dir="auto"></p>
 <p dir="auto">These files are then merged using a custom script, and output into the GA_FINAL_MERGE folder (GA = "gene annotation"). Files include:</p>
 <ul dir="auto">
 <li>a gene map <code>gene_map.tsv</code></li>
 <li>unannotated reads <code>GA_leftover_contigs.fasta</code> <code>GA_leftover_singletons.fasta</code></li>
 <li>translated protein sequences of all genes annotated over the three annotation steps <code>all_proteins.faa</code></li>
 </ul>
+<p dir="auto"></p>
 <p dir="auto">The format of the MetaPro command is:</p>
 <p dir="auto">    read1='&lt;path to your unassembled singletons.fastq&gt;'<br>
     contig='&lt;path to your contigs.fasta&gt;'<br>
