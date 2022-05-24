@@ -614,7 +614,8 @@ python3 /pipeline/MetaPro.py -c $config -s $read1 --contig $contig -o $output --
 <p dir="auto">MetaPro reconciles the three sets of annotations in the following manner:</p>
 <ul dir="auto">
 <li>Enzymes predicted by DETECT are included, followed by annotations that agree between PRIAM and DIAMOND</li>
-- In the event that multiple enzymes are annotated to the same protein:<br>
+<p dir="auto"></p>
+In the event that multiple enzymes are annotated to the same protein:<br>
 <li>Each enzyme annotation comes with a probability score.</li>
 <li>MetaPro includes an enzyme co-occurence database (compiled from the ENZYME database) that contains pairs of enzymes known to exist together. Using this co-occurence database, the pipeline filters out invalid predictions. If a pair of enzymes does not exist in the database, the enzyme with the higher probability score is declared the proper annotation.</li>
 <li>In cases where more than two enzymes are annotated to a protein, the top two enzymes are assigned based on the probability score.</li>
