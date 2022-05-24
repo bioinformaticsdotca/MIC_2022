@@ -450,12 +450,13 @@ In this step, MetaPro does the following:</p>
 <p dir="auto"><a href="https://cab.spbu.ru/software/spades/" rel="nofollow">SPAdes</a> assembles long contigs, but MetaPro requires that each contig only represent 1 gene. Thus the need to disassemble them, using <a href="http://exon.gatech.edu/Genemark/meta_gmhmmp.cgi" rel="nofollow">MetaGeneMark</a>  MetaGeneMark requires the user to register and obtain a free license.  Thus, we have provided the results in the precomputed files package.</p>
 <p dir="auto"><br></p>
 <blockquote>
-<p dir="auto"><em><strong>Question 7.1: How many contigs did SPAdes produce?<br>
-Hint: try using the command <code>tail contigs.fasta</code></strong></em></p>
+<p dir="auto"><em><strong>Question 7.1: How many reads were used in the assembled contigs?<br>
+Hint: check how many are left in the 'singletons' (unassembled reads) file.</strong></em></p>
 </blockquote>
 <p dir="auto"><br></p>
 <blockquote>
-<p dir="auto"><em><strong>Question 7.2: How many reads were not used in contig assembly? How many reads were used in contig assembly?</strong></em></p>
+<p dir="auto"><em><strong>Question 7.2: How many genes were predicted in the assembled contigs?<br>
+Hint: try using the command <code>tail contigs.fasta</code></strong></em></p>
 </blockquote>
 <p dir="auto"><br></p>
 <h3 dir="auto"><a id="user-content-step-8-annotate-reads-to-known-genesproteins--do-not-run" class="anchor" aria-hidden="true" href="#step-8-annotate-reads-to-known-genesproteins--do-not-run"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a><a id="user-content-step-8-annotate-reads-to-known-genesproteins--do-not-run" href="#step-8-annotate-reads-to-known-genesproteins--do-not-run"></a>Step 8. Annotate reads to known genes/proteins *** <strong>[DO NOT RUN]</strong></h3>
