@@ -604,17 +604,21 @@ python3 /pipeline/MetaPro.py -c $config -s $read1 --contig $contig -o $output --
 </code></pre></div></div>
 <p dir="auto"><strong>Notes:</strong><br>
 <p dir="auto"></p>
-MetaPro's high-confidence and low-confidence are determined as follows:<br>
+<p dir="auto">MetaPro's high-confidence and low-confidence are determined as follows:</p>
+<ul dir="auto">
 <li>DIAMOND: Low-confidence hits have an e-value of 1e-5 or smaller; high-confidence hits have an e-value of 1e-10 or smaller</li>
 <li>PRIAM: Low-confidence hits have e-values lower than 1e-5; high-confidence hits have a probability value of 0.5 or higher</li>
-<li>DETECT: No separation.</li></p>
+<li>DETECT: No separation.</li>
+</ul>
 <p dir="auto"></p>
-<p dir="auto">MetaPro reconciles the three sets of annotations in the following manner:<br>
-<li>Enzymes predicted by DETECT are included, followed by annotations that agree between PRIAM and DIAMOND<br>
-In the event that multiple enzymes are annotated to the same protein:<br>
+<p dir="auto">MetaPro reconciles the three sets of annotations in the following manner:</p>
+<ul dir="auto">
+<li>Enzymes predicted by DETECT are included, followed by annotations that agree between PRIAM and DIAMOND</li>
+- In the event that multiple enzymes are annotated to the same protein:<br>
 <li>Each enzyme annotation comes with a probability score.</li>
 <li>MetaPro includes an enzyme co-occurence database (compiled from the ENZYME database) that contains pairs of enzymes known to exist together. Using this co-occurence database, the pipeline filters out invalid predictions. If a pair of enzymes does not exist in the database, the enzyme with the higher probability score is declared the proper annotation.</li>
-<li>In cases where more than two enzymes are annotated to a protein, the top two enzymes are assigned based on the probability score.</li></p>
+<li>In cases where more than two enzymes are annotated to a protein, the top two enzymes are assigned based on the probability score.</li>
+</ul>
 <p dir="auto"><br></p>
 <blockquote>
 <p dir="auto"><em><strong>Question 10.1: How many high-confidence unique enzyme functions were identified in our dataset?</strong></em></p>
