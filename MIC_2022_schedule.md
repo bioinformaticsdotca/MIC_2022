@@ -8,12 +8,16 @@ image: /site_images/CBW_Metagenome_icon.jpg
 home: https://bioinformaticsdotca.github.io/MIC_2022
 ---
 
-||**Wednesday 1 September** | | **Thursday 2 September** | | **Friday 3 September** | 
+||**Monday May 30** | | **Tuesday May 31** | | **Wednesday June 1** | 
 |:---: | :---: | :---: | :---: | :---: | :---: |
-|	11:00	|	Welcome	|	11:00	|	<font color="purple">Module 4: Metagenome Taxa/ Functional Annotation</font> 	|	11:00	|	<font color="purple">Module 6: Metatranscriptomics</font> 	|
-|	11:30	|	<font color="purple">Module 2: Taxonomic Analysis + Stats Module</font>	|	11:30	|	<font color="blue">Lab</font>	|	11:30	|	<font color="blue">Lab</font>	|
-|	12:00	|	<font color="blue">16S Lab Practical</font> 	|	13:30	|	<font color="green">Break</font>	|	13:30	|	<font color="green">Break</font>	|
-|	14:00	|	<font color="green">Break</font>	|	14:00	|	<font color="purple">Module 5: Metagenome Assembly & MAGs</font> 	|	14:00	|	<font color="purple">Biomarker Q & A</font> 	|
-|	14:30	|	<font color="purple">Module 3: Bridging Taxonomy and Function</font>	|	14:30	|	<font color="blue">Lab</font> 	|	15:30	|	<font color="blue">Integrated Assignment</font> |
-|	15:00	|	<font color="blue">PICRUSt Lab </font> 	|	16:00	|		|	16:00	|	Survey & Closing Remarks		|
-|	16:00	|		|		|		|	|
+|	8:30	|	Welcome + Introduction	|	8:30	|	Checking In 	|	8:30	|	Checking In	|
+|	9:00	|	<font color="purple">Introduction to Microbiome Studies & AWS Setup</font>	|	9:00	|	<font color="purple">Module 3: Metagenome Taxonomic Analysis</font>	|	9:00	|	<font color="purple">Module 5: Metagenome Assembly & MAGs</font>	|
+|	10:30|	<font color="green">Break</font>	|	10:00	|	<font color="green">Break</font>	|	10:00	|	<font color="green">Break</font>	|
+|	11:00|	<font color="purple">Module 2: Marker Gene Taxonomic Analysis + Lab</font>	|	10:30	|	<font color="blue">MGS Taxa Analysis Lab</font>	|	10:30	|	<font color="blue">Metagenome Assembly & MAGs Lab</font>	|
+|	12:30|	<font color="green">Lunch</font>	|	12:30	|	<font color="green">Lunch</font>	|	12:30	|	<font color="green">Lunch</font>	|
+|	13:30	|	<font color="blue">Marker Gene Taxonomic Analysis Lab (continue)</font>	|	13:30	|	<font color="purple">Module 4: Metagenome Functional Annotation</font> 	|	13:30	|	<font color="purple">Module 6: Metatranscriptomics</font> 	|
+|	14:30	|	<font color="green">Break</font>	|	14:30	|	<font color="green">Break</font> 	|	14:30	|	<font color="green">Break</font> |
+|	15:00	|	<font color="purple">Sample Collection/Prep </font> 	|	15:00	|	<font color="blue">Metagenome Functional Annotation Lab</font>	|	15:00	|	<font color="blue">Metatranscriptomics Lab</font>		|
+|	16:00	|	<font color="purple">Sample Size Calculation</font> 	|	16:00	|	(Lab cont.)	|	16:00	|	(Lab cont.)	|
+|	17:00	|	End of Day	|	17:00 |End of Day	|	17:00	|	Closing Remark|
+|	18:30	|	Group Dinner	|	|	|	|	|
