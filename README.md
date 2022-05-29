@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 layout: workshop_main_3day
 permalink: /MIC_2022
@@ -115,3 +116,6 @@ comming soon
 
 [Lab Module 6 (Recommended reading)](https://doi.org/10.1101/2021.02.23.432558)
 
+=======
+# MIC_2022
+>>>>>>> parent of 4342cea (Update README.md)
