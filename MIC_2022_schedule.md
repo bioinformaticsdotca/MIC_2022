@@ -1,11 +1,11 @@
 ---
 layout: tutorial_page
-permalink: /MIC_2021_schedule
+permalink: /MIC_2022_schedule
 title: MIC
 header1: Workshop Pages for Students
-header2: Microbiome Analysis 2021
+header2: Microbiome Analysis 2022
 image: /site_images/CBW_Metagenome_icon.jpg
-home: https://bioinformaticsdotca.github.io/MIC_2021
+home: https://bioinformaticsdotca.github.io/MIC_2022
 ---
 
 ||**Wednesday 1 September** | | **Thursday 2 September** | | **Friday 3 September** | 
