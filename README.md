@@ -111,7 +111,7 @@ comming soon
 
 ### Labs
 
-[Lab Module 6](https://bioinformaticsdotca.github.io/MIC_2022/MIC_2022_Module6_lab)
+[Lab Module 6](https://github.com/bioinformaticsdotca/MIC_2022/blob/main/Module6_Metatranscriptomics_Tutorial_MIC-2022.md)
 
 [Lab Module 6 (Recommended reading)](https://doi.org/10.1101/2021.02.23.432558)
 
