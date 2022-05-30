@@ -4,7 +4,7 @@ description: "CBW focuses on training researchers to use the latest approaches i
 google_analytics_tracking_id: UA-18554799-8
 permalink: /2022_workshops/:year/:month/:title.html
 github_username: bioinformatics-ca
-baseurl: '/'
+baseurl: ''
 filesurl: '/files'
 
 markdown: kramdown
