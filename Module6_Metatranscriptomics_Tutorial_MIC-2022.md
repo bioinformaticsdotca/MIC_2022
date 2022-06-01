@@ -71,7 +71,7 @@ ls
 <li>an example Cytoscape file which may be generated with MetaPro to view microbial metabolic pathway activity <code>Example.cys</code></li>
 </ul>
 <p dir="auto">MetaPro's tools may take a long time to run if the user does not have the necessary computing resources.  Therefore, we provide <em>pre-computed output files</em> (within the <code>mouse1_run/</code> folder) so that the user is not forced to run computationally intensive steps during the tutorial.</p>
-<p dir="auto">Change the permissions of the <code>mouse1_run/</code> folder in order to view its contents through a browser ( via your IP address, http://[ public ipv4 ] ):</p>
+<p dir="auto">Change the permissions of the <code>mouse1_run/</code> folder in order to view its contents through a browser:</p>
 <div dir="auto"><div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="chmod -R 777 mouse1_run"><pre class="notranslate"><code>chmod -R 777 mouse1_run
 </code></pre></div></div>
 <p dir="auto">Access your workspace in a web browser to view the output directory: <em>(keep the tab open!)</em></p>
