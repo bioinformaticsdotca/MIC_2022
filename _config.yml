@@ -1,6 +1,6 @@
 url: "https://bioinformaticsdotca.github.io/MIC_2022"
-title: "CBW Workshop GitHub"
-description: "CBW focuses on training researchers to use the latest approaches in computational biology to deal with large dataset."
+title: "IMPACTT Workshop 2022"
+description: "Integrated Microbiome Platforms for Advancing Causation Testing and Translation."
 google_analytics_tracking_id: UA-18554799-8
 permalink: /2022_workshops/:year/:month/:title.html
 github_username: bioinformatics-ca
