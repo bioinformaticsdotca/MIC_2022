@@ -1,12 +1,3 @@
----
-layout: aws_page
-permalink: /AWS_setup
-title: AWS Setup
-header1: Workshop Pages for Students
-header2: AWS Setup
-image: /site_images/Bioinfo_Logo.jpg
-home: https://bioinformaticsdotca.github.io/MIC_2022
----
 
 ## Logging into the Amazon Cloud During the Workshop  
 
@@ -45,7 +36,7 @@ home: https://bioinformaticsdotca.github.io/MIC_2022
 
 <img src="https://github.com/bioinformaticsdotca/MIC_2022/blob/main/Putty_Data_Options.jpg?raw=true" alt="Putty Data Options" class="center"> 
 
-* In the left hand categories, in the Connection category next to SSH click on the **+**. Click on Auth. In the private-key file for authentication field, hit browse and find the MIC.ppk file that you downloaded above.
+* In the left hand categories, in the Connection category next to SSH click on the **+**. Click on **+** next to Auth and then click Credentials. In the private-key file for authentication field, hit browse and find the MIC.ppk file that you downloaded above.
 
 <img src="https://github.com/bioinformaticsdotca/MIC_2022/blob/main/Putty_Auth_Options.jpg?raw=true" alt="Putty Auth Options" class="center">
 
