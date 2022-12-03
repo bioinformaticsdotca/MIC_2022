@@ -2,7 +2,7 @@ url: "https://bioinformaticsdotca.github.io/MIC_2022"
 title: "IMPACTT Workshop 2022"
 description: "Integrated Microbiome Platforms for Advancing Causation Testing and Translation."
 google_analytics_tracking_id: UA-18554799-8
-logo: IMPACTT_logo.jpg
+logo: /MIC_2022/IMPACTT_logo.jpg
 github_username: bioinformatics-ca
 baseurl: ''
 
