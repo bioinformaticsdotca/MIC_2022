@@ -4,6 +4,7 @@ description: "Integrated Microbiome Platforms for Advancing Causation Testing an
 google_analytics_tracking_id: UA-18554799-8
 logo: IMPACTT_logo.jpg
 github_username: bioinformatics-ca
+baseurl: ''
 
 markdown: kramdown
 highlighter: rouge
