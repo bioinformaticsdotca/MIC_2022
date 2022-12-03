@@ -1,0 +1,9 @@
+@import "minima";
+
+.site-title::before {
+	content: url("/IMPACTT_logo.jpg");
+	display: inline-block;
+	position: relative;
+	width: 37px;
+	top: 5px;
+}
