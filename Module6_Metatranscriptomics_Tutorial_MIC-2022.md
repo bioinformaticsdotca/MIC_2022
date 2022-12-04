@@ -697,6 +697,9 @@ wget https://github.com/ParkinsonLab/Metatranscriptome-Workshop/releases/downloa
 <li>Check <code>Import pathway details from KEGG Database</code> box then select <code>OK</code></li>
 </ul>
   <p dir="auto"></p>
+<p dir="auto"></p><strong>Note:</strong> If you get an error while loading network via <code>KEGGscape</code>, you can alternatively install <code>CyKEGGparser</code> plugin within Cytoscape. Once installed, select <code>Apps</code> -&gt; <code>KEGGparser</code> -&gt; <code>Load KGML</code> -&gt; <code>Load local KGML</code> -&gt; <code>...</code>
+  </ul>
+  <p dir="auto"></p>
 <p dir="auto"><strong>Loading a node attribute text file (.txt)</strong> - This will map attributes (e.g. expression values) to nodes in your network which you can subsequently visualize</p>
 <ul dir="auto">
 <li>Select <code>File</code> -&gt; <code>Import</code> -&gt; <code>Table</code> -&gt; <code>File...</code></li>
