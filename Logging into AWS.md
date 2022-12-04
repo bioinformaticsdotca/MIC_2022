@@ -1,6 +1,6 @@
-
 ---
 layout: page
+title: Logging into the Amazon Cloud During the Workshop
 ---
 
 * These instructions will **ONLY** be relevant in class, as the Cloud will not be accessible from home in advance of the class.
