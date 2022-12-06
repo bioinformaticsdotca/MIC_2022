@@ -8,7 +8,7 @@ You will need to bring your own laptop with you to the workshop. Ahead of the wo
 # Logging into the Amazon Cloud 
 Please follow the [instruction](/MIC_2022/Logging%20into%20AWS) to log into your AWS instance.
 
-# Module 2: QIIME2 from Sequence to ASV Table Lecture
+# Module 2: QIIME2 from Sequence to ASV Table
 [Lab Practical](https://github.com/beiko-lab/CBW2021_Module2_16S_Analysis/wiki/MIC-Module-2-tutorial)
 
 # Metagenomics
