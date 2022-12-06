@@ -8,5 +8,8 @@ You will need to bring your own laptop with you to the workshop. Ahead of the wo
 # Logging into the Amazon Cloud 
 Please follow the [instruction](/MIC_2022/Logging%20into%20AWS) to log into your AWS instance.
 
+# Metagenomics
+[Lab Practical](https://github.com/LangilleLab/microbiome_helper/wiki/Metagenomics-(IMPACTT-December-2022))
+
 # MetaPro Metatranscriptomics Practical Lab
 [Lab Practical](/MIC_2022/Module6_Metatranscriptomics_Tutorial_MIC-2022)
