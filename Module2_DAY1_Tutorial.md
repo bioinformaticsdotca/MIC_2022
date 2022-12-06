@@ -1,6 +1,6 @@
 ---
 layout: page
-title: MIC 2021 Module 2 Lab
+title: MIC 2022 Module 2 Lab
 ---
 
 This lab is based on the [16S rRNA gene analysis](https://link.springer.com/protocol/10.1007%2F978-1-4939-8728-3_8) method originally developed by Michael Hall and Robert Beiko, and was updated and modified by Diana Haider for the 2022 Microbiome workshop.
