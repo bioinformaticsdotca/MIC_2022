@@ -9,7 +9,7 @@ You will need to bring your own laptop with you to the workshop. Ahead of the wo
 Please follow the [instruction](/MIC_2022/Logging%20into%20AWS) to log into your AWS instance.
 
 # Module 2: QIIME2 from Sequence to ASV Table Lecture
-[Lab Practical](https://bioinformaticsdotca.github.io/MIC_2022/Module2_DAY1_Tutorial/)
+[Lab Practical](https://github.com/beiko-lab/CBW2021_Module2_16S_Analysis/wiki/MIC-Module-2-tutorial)
 
 # Metagenomics
 [Lab Practical](https://github.com/LangilleLab/microbiome_helper/wiki/Metagenomics-(IMPACTT-December-2022))
