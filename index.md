@@ -11,7 +11,8 @@ Please follow the [instruction](/MIC_2022/Logging%20into%20AWS) to log into your
 # Module 2: QIIME2
 [Lab Practical](https://github.com/beiko-lab/CBW2021_Module2_16S_Analysis/wiki/MIC-Module-2-tutorial)
 
-# Metagenomics
+# Metagenomics Taxa & Assembly
+[Lecture](Metagenomics_taxa_and_assembly.pdf)<br />
 [Lab Practical](https://github.com/LangilleLab/microbiome_helper/wiki/Metagenomics-(IMPACTT-December-2022))
 
 # MetaPro Metatranscriptomics Practical Lab
