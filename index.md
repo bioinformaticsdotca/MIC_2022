@@ -23,4 +23,5 @@ Please follow the [instruction](/MIC_2022/Logging%20into%20AWS) to log into your
 [Lab Practical](https://github.com/LangilleLab/microbiome_helper/wiki/Metagenomics-(IMPACTT-December-2022)) TA: **Robyn Wright**
 
 # Module 5: Transcriptomics & Function
+[Lecture](module5_Metatranscriptomics_Lecture_Slides_2022.pdf) Instructor: **John Parkinson**<br />
 [Lab Practical](https://github.com/bioinformaticsdotca/MIC_2022/blob/main/Module6_Metatranscriptomics_Tutorial_MIC-2022.md) TA: **Irina Utkina**
