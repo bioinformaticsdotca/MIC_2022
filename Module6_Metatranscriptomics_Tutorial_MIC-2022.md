@@ -704,8 +704,10 @@ wget https://github.com/ParkinsonLab/Metatranscriptome-Workshop/releases/downloa
 <ul dir="auto">
 <li>Select <code>File</code> -&gt; <code>Import</code> -&gt; <code>Table</code> -&gt; <code>File...</code></li>
 <li>Select the <code>Cytoscape_network.tsv</code> file and click <code>Open</code></li>
-<li>Change the <code>Key Column for network</code> from <code>shared name</code> to <code>KEGG_NODE_LABEL</code></li>
 <li>Click OK</li>
+<li>If you do not see the node table in the panel below the network, you can try another network file. First, copy it in your directory running the command 
+  <p dir="auto"><code>cp ~/CourseData/Module6/Data/Cytoscape_network_1.tsv ~/workspace/metapro_tutorial/mouse1_run/outputs/final_results/</code>.</p>
+   Then download this file to your own workstation and open in Cytoscape.</li>
 </ul>
   <p dir="auto"></p>
 <p dir="auto"><strong>Visualizing your node attributes</strong></p>
