@@ -8,12 +8,19 @@ You will need to bring your own laptop with you to the workshop. Ahead of the wo
 # Logging into the Amazon Cloud 
 Please follow the [instruction](/MIC_2022/Logging%20into%20AWS) to log into your AWS instance.
 
-# Module 2: QIIME2
+# Module 1: Introduction to Microbiome Studies
+[Lecture](module1_Introduction.pdf)
+
+# Module 2: QIIME2 from Sequence to ASV Table
+[Lecture](module2_Sequence_Table_to_ASV.pdf)<br />
 [Lab Practical](https://github.com/beiko-lab/CBW2021_Module2_16S_Analysis/wiki/MIC-Module-2-tutorial)
 
-# Metagenomics Taxa & Assembly
+# Module 3: Statistics & Data Visualization
+[Lecture](module3_Statistics_Data_Visualization.pdf)
+
+# Module 4: Metagenomics Taxa & Assembly
 [Lecture](Metagenomics_taxa_and_assembly.pdf)<br />
 [Lab Practical](https://github.com/LangilleLab/microbiome_helper/wiki/Metagenomics-(IMPACTT-December-2022))
 
-# MetaPro Metatranscriptomics Practical Lab
+# Module 5: Transcriptomics & Function
 [Lab Practical](https://github.com/bioinformaticsdotca/MIC_2022/blob/main/Module6_Metatranscriptomics_Tutorial_MIC-2022.md)
